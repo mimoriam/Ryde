@@ -1,4 +1,5 @@
-import { Text } from 'react-native';
+import { Link } from 'expo-router';
+import { Text, View } from 'react-native';
 
 import { Container } from '~/components/Container';
 
@@ -7,6 +8,11 @@ export default function Home() {
     <>
       <Container>
         <Text>Hello</Text>
+        <Link href="/">
+          <View>
+            <Text />
+          </View>
+        </Link>
       </Container>
     </>
   );
