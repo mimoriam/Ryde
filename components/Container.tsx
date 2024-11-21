@@ -1,3 +1,4 @@
+import React from 'react';
 import { SafeAreaView } from 'react-native';
 
 export const Container = ({ children }: { children: React.ReactNode }) => {
@@ -5,5 +6,5 @@ export const Container = ({ children }: { children: React.ReactNode }) => {
 };
 
 const styles = {
-  container: 'flex flex-1 m-6',
+  container: 'flex flex-1',
 };
