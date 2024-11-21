@@ -5,6 +5,7 @@
     "version": "1.0.0",
 
     "scheme": "Ryde",
+    "newArchEnabled": true,
     "web": {
       "bundler": "metro",
       "output": "static",
