@@ -1,2 +1,4 @@
 npx expo install -- --save-dev eslint-config-prettier eslint-plugin-prettier eslint-plugin-import
 npx expo install expo-splash-screen
+
+npx expo install react-native-swiper
