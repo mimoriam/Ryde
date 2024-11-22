@@ -2,3 +2,8 @@ npx expo install -- --save-dev eslint-config-prettier eslint-plugin-prettier esl
 npx expo install expo-splash-screen
 
 npx expo install react-native-swiper
+
+// https://clerk.com/docs/quickstarts/expo
+npx expo install react-dom react-native-web @expo/metro-runtime
+npm install @clerk/clerk-expo
+npx expo install expo-secure-store react-native-modal expo-local-authentication
