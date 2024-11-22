@@ -1,13 +1,14 @@
 import { SignedIn, SignedOut, useAuth, useUser } from '@clerk/clerk-expo';
 import { Link } from 'expo-router';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Home() {
   const { user } = useUser();
   const { signOut } = useAuth();
 
   return (
-    <View>
+    <SafeAreaView>
       <SignedIn>
         <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
         <TouchableOpacity
@@ -25,6 +26,6 @@ export default function Home() {
           <Text>Sign Up</Text>
         </Link>
       </SignedOut>
-    </View>
+    </SafeAreaView>
   );
 }
